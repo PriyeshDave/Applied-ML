@@ -11,9 +11,6 @@ class LogisticRegressor:
 
     self.X = np.array(data.iloc[:,0]).reshape(self.m, 1)
     self.W0 = np.ones((self.m, 1))
-
-    print("X: ",self.X.shape)
-    print("W0: ",self.W0.shape)
   
     self.noOfIterations = noOfIterations
     self.learningRate = learningRate
@@ -22,7 +19,6 @@ class LogisticRegressor:
     self.iterationsList = list()
 
     self.X = np.concatenate((self.W0, self.X), 1)
-    print("X concated: ",self.X.shape)
     self.y = np.array(data.iloc[:,1]).reshape((self.m,1))
     self.W = np.zeros((self.n, 1)) 
 
