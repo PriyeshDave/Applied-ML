@@ -9,7 +9,7 @@ class LogisticRegressor:
   def __init__(self, data, noOfIterations, learningRate):
     self.m, self.n = data.shape
 
-    self.X = np.array(data.iloc[:,0]).reshape(self.m, 1)
+    self.X = np.array(data.iloc[:,0]).reshape(self.m, self.n -1)
     self.W0 = np.ones((self.m, 1))
   
     self.noOfIterations = noOfIterations
