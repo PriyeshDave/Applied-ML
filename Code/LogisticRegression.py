@@ -9,8 +9,11 @@ class LogisticRegressor:
   def __init__(self, data, noOfIterations, learningRate):
     self.m, self.n = data.shape
 
-    self.X = np.array(data.iloc[:,0])
-    self.W0 = np.ones((self.m,))
+    self.X = np.array(data.iloc[:,0]).reshape(self.m, 1)
+    self.W0 = np.ones((self.m, 1))
+
+    print("X: ",self.X.shape)
+    print("W0: ",self.W0.shape)
   
     self.noOfIterations = noOfIterations
     self.learningRate = learningRate
@@ -18,9 +21,10 @@ class LogisticRegressor:
     self.WList = list()
     self.iterationsList = list()
 
-    self.X = np.vstack((self.W0, self.X)).T
+    self.X = np.concatenate((self.W0, self.X), 1)
+    print("X concated: ",self.X.shape)
     self.y = np.array(data.iloc[:,1]).reshape((self.m,1))
-    self.W = np.zeros((self.n, 1)) # Doing n+1 beacause the value of n we took from features set and we want W = W0, W1, W2.........Wn   
+    self.W = np.zeros((self.n, 1)) 
 
     
   def updateWeights(self, dw):
