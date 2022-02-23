@@ -6,5 +6,6 @@ Implementing the Machine Learning algorithms from scratch using python.
 * Logistic Regression with Gradient Descent.
 * Ridge Regression with Gradient Descent.
 * Ridge Regression with Normal Equation.
-* KNN Classifier.
-* KNN Regressor.
+* KNN Classifier algorithm.
+* KNN Regressor algorithm.
+* Gaussian Naive Bayes algorithm.
