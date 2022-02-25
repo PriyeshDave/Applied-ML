@@ -9,3 +9,4 @@ Implementing the Machine Learning algorithms from scratch using python.
 * KNN Classifier algorithm.
 * KNN Regressor algorithm.
 * Gaussian Naive Bayes algorithm.
+* Perceptron algorithm with forward propogation.
