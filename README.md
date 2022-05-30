@@ -6,7 +6,7 @@
 ![Machine Learning](https://img.shields.io/badge/Ridge%20Regression-orange)
 ![Machine Learning](https://img.shields.io/badge/Lasso%20Regression-orange)
 ![Machine Learning](https://img.shields.io/badge/KNN%20Regressor-success)
-![Machine Learning](https://img.shields.io/badge/KNN%20RClassifier-sucess)
+![Machine Learning](https://img.shields.io/badge/KNN%20Classifier-sucess)
 ![Machine Learning](https://img.shields.io/badge/Gaussian%20Naive%20Bayes-purple)
 ![Machine Learning](https://img.shields.io/badge/Perceptron-Red)
 
